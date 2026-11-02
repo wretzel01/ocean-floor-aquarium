@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Ocean Ecosystem Sim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="canvas-container">
+    <div id="ui-display">
+      <div>Season: <span id="season-display" class="highlight">Spring</span></div>
+      <div>Day: <span id="day-display" class="highlight">1 / 5</span></div>
+      <div>Time: <span id="clock-display" class="highlight">Dawn</span></div>
+      <div>Speed: <span id="speed-display" class="highlight">1x</span></div>
+
+      <div class="hotkey-legend">
+        <strong>[ Dev Controls ]</strong><br>
+        [Space] Pause / Resume<br>
+        [A] / [D] Prev / Next Day<br>
+        [S] Skip to Next Season<br>
+        [1] Spring | [2] Summer | [3] Fall | [4] Winter<br>
+        [+] / [-] Speed Up / Slow Down
+      </div>
+    </div>
+    <canvas id="aquariumCanvas"></canvas>
+  </div>
+
+  <script type="module" src="aquarium.js"></script>
+</body>
+</html>
